@@ -35,9 +35,9 @@ p{
   color:#FFFFFF ;
   margin-top: -30;
   z-index: 7;
-
-
  }
+
+
  h2{
   margin-top: 13px;
   margin-left: 0rem;
@@ -68,7 +68,37 @@ p{
          }
          div.container0{z-index: 6;}
     
-         ul.barra{display: none;}
+          #idmenu{visibility: hidden;}
+
+         .barra{
+          margin: 0px;
+          position: absolute;
+          transition: all 500ms ease;
+          opacity: 0;
+          visibility: hidden;
+          z-index: 100;
+         
+      }
+      
+          
+      #idmenu:checked ~ .barra{
+          
+          opacity: 1;
+          visibility: visible;
+          position: fixed;
+          list-style: none;
+          background-color: antiquewhite;
+          margin-top: 4rem;
+          border-radius: 20%;
+          border-style: solid;
+          height: 10rem;
+          width: 7rem;
+          text-align: center;
+        
+      }
+     
+
+
     nav.fathmenu{
       position: absolute;
       width: 100%;
@@ -85,9 +115,11 @@ p{
  img.menu{
     position: absolute;
     margin-top: 1.5rem;
-    margin-right: 1.5rem;
+    margin-left: -4rem;
     z-index: 10;
  }
+
+ 
  
 
  div.container{
@@ -367,6 +399,14 @@ ul.barra{
   list-style: none;
   color: white;
 }
+#idmenu{visibility: hidden;}
+
+h1:hover{
+  cursor: pointer;
+  color: lightgreen;
+ }
+
+
 li:hover{
   cursor: pointer;
   color: aqua;
